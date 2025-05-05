@@ -6,8 +6,59 @@
     /* transition: 1s; */
 }
 
-@media screen {
-    
+@media  (max-width:600px)  {
+    *{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+ body h2{
+    font-size: 1.7em;
+    margin-bottom: 10px;
+    }
+ body label {
+    font-size: 1em;
+    }
+ body input {
+        border-radius: 5px;
+        width: 100%;
+        margin: 2px 0 7px 0;
+        padding: 5px 3px;
+        font-size: .9em;
+        font-weight: 500;
+    }
+    form {
+        width: 310px;
+    }
+    body button {
+        border-radius: 5px;
+        font-size: 1em;
+        font-weight: 600;
+        background: hsl(120, 50%, 30%);
+        color: white;
+        width: 100%;
+        padding: 6px ;
+        margin: 5px 0;
+        cursor: pointer;
+        transition: .3s;
+    }
+    body #loanSummary {
+        font-size: ;
+        display: none;
+        margin-top: 10px;
+        border-left: 4px solid hsl(120, 45%, 30%);
+        padding: 5px;
+        background: rgba(244, 241, 241, 0.581);
+    }
+    body p {
+        margin: 5px 0;
+        font-size: 1em;
+        font-weight: 500;
+    }
+    body h3 {
+        /* margin: 20px 0; */
+        font-weight: 700;
+        font-size: 1.1em;
+    }
+
 }
 
 body {

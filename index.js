@@ -10,9 +10,10 @@ function validateForm() {
     if (!name || !email || !amount || !rate || !years) {
         alert("Please fill in all required fields!");
         return false; // Prevent calculation
-    }else{
-        window.location.href = 'aaaaa.html'
     }
+    // else{
+    //     window.location.href = 'aaaaa.html'
+    // }
     return true; // Allow calculation
 }
 function Calculate() {
