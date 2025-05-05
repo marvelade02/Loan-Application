@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Form App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="parent">
+
+        <form action="" id="myForm" onsubmit="return validateForm()">
+            <h2>Loan Application Form</h2>
+            <label for="name">Fullname</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your firstname first" required><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="example@gmaii.com" required><br>
+
+            <label for="amount">Loan Amount ($)</label><br>
+            <input type="number" id="amount" value=""><br>
+
+            <label for="rate">Interest Rate (%)</label><br>
+            <input type="number" id="rate" placeholder="" value="10" fixed><br>
+
+            <label for="years">Repayment Years</label><br>
+            <input type="number" id="years" placeholder="" value=""><br>
+
+            <!-- <div class="terms">
+                <div>
+                    <input type="checkbox" name="check" id="check">
+                 <label for="check">I have read the <a href="#">terms</a> and <a href="#">conditions</a></label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="age-check" id="age-check">
+                 <label for="age-check">I am 18 or above</label>
+                </div>
+            </div> -->
+            <button type="submit" onclick="Calculate()" value="submit">Calculate Loan</button>
+
+            <div id="loanSummary">
+                <h3>Loan Summary</h3>
+                <p><b>Total Interest:</b><span id="totalInterest"></span></p>
+                <p><b>Monthly Payment:</b><span id="monthlyPayment"></span></p>
+                <p><b>Total Payment:</b><span id="totalPayment"></span></p>
+                <!-- <button type="submit">Get Loan</button> -->
+            </div>
+        </form>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
