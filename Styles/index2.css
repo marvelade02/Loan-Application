@@ -1,0 +1,14 @@
+@media (max-width:600px) {
+    form .buttons{
+        display: flex;
+    }
+    body h2 {
+        font-size: 2em;
+    }
+    body button {
+        font-size: 1.em;
+        color: white;
+        width: 45%;
+        margin: 15px 5px;
+    }
+}

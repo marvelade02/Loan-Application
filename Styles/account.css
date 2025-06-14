@@ -1,0 +1,12 @@
+@media (max-width:600px) {
+    body label {
+        font-size: 1.8em;
+    }
+    body input {
+        font-size: .9em;
+        margin: 5px 0;
+    }
+    form button {
+        margin-top: 15px;
+    }
+}

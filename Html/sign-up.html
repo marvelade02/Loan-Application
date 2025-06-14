@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Dashboard</title>
+    <link rel="stylesheet" href="/Styles/sign-up.css">
+    <link rel="stylesheet" href="/Styles/style.css">
+</head>
+<body>
+    <form action="" onsubmit="return validateSignUp()">
+        <h2>MicroFinance Bank</h2>
+        <label for="firstname">Firstname</label><br>
+        <input type="text" id="firstname" name="firstname" placeholder="Firstname"><br>
+
+        <label for="lastname">Lastname</label><br>
+        <input type="text" id="lastname" name="lastname" placeholder="Lastname"><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" placeholder="example@gmail.com"><br>
+
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password" placeholder="Create password"><br>
+
+        <button type="submit" class="btn">Sign Up</button>
+        <!-- <p class="sign-in-link"><a href="sign-in.html" class="sign-in-link">Already registered? Login here</a></p> -->
+
+        <div id="displayMessage" style="display: none;">
+            Please fill in all required fields!!!
+        </div>
+    </form>
+</body>
+<script src="/JS/link.js"></script>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Loan</title>
+    <link rel="stylesheet" href="/Styles/style.css">
+
+
+</head>
+<body>
+    <div class="parent">
+        <form action="" id="myForm" onsubmit="return validateForm()" novalidate>
+            <h2 class="">Request Loan</h2>
+            <label for="amount">Loan Amount ($)</label><br>
+            <input type="number" id="amount" value="" min="1000" max="500000"><br>
+
+            <label for="rate">Interest Rate (%)</label><br>
+            <input type="number" id="rate" placeholder="" value="10" min="10" max="10"><br>
+
+            <label for="years">Repayment Years</label><br>
+            <input type="number" id="years" placeholder="" value="" min="1" max="4"><br>
+
+            <button type="submit" onclick="Calculate()" value="submit">Submit</button>
+
+            <div id="loanSummary">
+                <h3>Loan Summary</h3>
+                <p><b>Total Interest:</b><span id="totalInterest"></span></p>
+                <p><b>Monthly Payment:</b><span id="monthlyPayment"></span></p>
+                <p><b>Total Payment:</b><span id="totalPayment"></span></p>
+                <button type="submit" id="loanBtn" class="loan-btn">Confirm Loan</button>
+            </div>
+            <!-- <div id="customAlert" class="custom-alert">
+                <p id="alertMessage"></p>
+                <button onclick="closeAlert()">OK</button>
+            </div> -->
+            <div id="displayMsg" style="display: none;">Please fill in all required fields!</div>
+        </form>
+        <div class="one" id="confirm" style="display: none;">
+            <!-- <p >Loan Request Succcessful 🥰🎊</p>
+            <button id="refreshBtn" class="refresh">OK</button> -->
+        </div>
+    </div>
+</body>
+<script src="/JS/link.js"></script>
+<script src="/JS/index.js"></script>
+</html>

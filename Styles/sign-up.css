@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media  (max-width:600px) {
+    body .class {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    body .class {
+        border: 2px solid hsl(120, 65%, 25%);
+        border-radius: 6px;
+        height: 30px;
+        width: 100%;
+        text-align: center;
+        margin: 10px 2px;
+        transition: .3s;
+        cursor: pointer;
+    }
+    .gender-class input {
+        margin: 0;
+        font-size: .9em;
+    }
+    body button {
+        font-size: 1.1em;
+        margin-top: 10px;
+    }
+     body form .sign-in-link a {
+        margin-left: 20px;
+        font-size: .95em;
+    }
+    body #displayMessage {
+        font-size: 1em;
+    }
+}
+
+.class {
+    border: 2px solid hsl(120, 65%, 25%);
+    border-radius: 6px;
+    width: 80% ;
+    text-align: center;
+    margin: 10px 5px;
+    transition: .3s;
+    cursor: pointer;
+    
+}
+
+.class:hover {
+    background-color: hsl(120, 65%, 25%);
+    color: white;
+}
+
+.gender-class {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gender-class input {
+    margin: 0;
+    width: 15px;
+}
+
+.sign-in-link a {
+    text-decoration: none;
+    color: hsl(120, 64%, 21%);
+    text-align: center;
+    margin-left: 20%;
+    font-size: 1em;
+}
+
+.sign-in-link a:hover {
+    color: hsl(120, 46%, 13%);
+    text-decoration: underline;
+}
+
+#displayMessage {
+    font-size: 1.3em;
+    font-weight: 500;
+    color: red;
+}
