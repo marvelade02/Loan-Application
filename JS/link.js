@@ -31,5 +31,5 @@ loanBtn.addEventListener('click', () => {
 })
 
 function gotoHome() {
-    window.location.href = "sign-up.html";
+    window.location.href = "index.html";
 }
