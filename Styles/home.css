@@ -27,7 +27,7 @@
 
     footer p{
         padding: 1.1px 0;
-        font-size: 1em;
+        font-size: .8em;
     }
     body .home-section {
         background-size: cover;
@@ -53,11 +53,11 @@
     }
 
     body .home-section div p, body .apply p{
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     body .features .fet p, body .contact .fet p {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
     body .overlay {
         display: none;
@@ -75,6 +75,13 @@
     body .apply {
         margin-bottom:90px;
     }
+    body .features .fet p {
+        padding: 10px;
+    }
+
+   body .contact .fet {
+    padding: 0 0;
+   }
      
 }
 
