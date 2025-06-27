@@ -75,12 +75,22 @@
     body .apply {
         margin-bottom:90px;
     }
-    body .features .fet p {
+
+    body .apply a {
         padding: 10px;
+        font-size: 1em;
+    }
+    body .features .fet p {
+        padding: 15px;
     }
 
-   body .contact .fet {
-    padding: 0 0;
+    body .contact {
+
+    }
+
+   body .contact .fet .one {
+        padding: 7px 5px;
+        font-size: 1em;
    }
      
 }
@@ -307,7 +317,7 @@ i:hover{
 
 .contact {
     background: hsla(215, 14%, 34%, 0.2);
-    padding: 5em 1.2em;
+    padding: 5em 2em;
     text-align: center;
     color: black;
 }
@@ -330,11 +340,17 @@ i:hover{
     gap: 1em;
 }
 
-.features .fet, .contact .fet {
+.features .fet {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
+
+ .contact .fet {
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+ }
 
 .features .fet p {
     border-left: 7px solid hsl(39, 100%, 50%);
