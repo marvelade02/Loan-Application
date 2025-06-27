@@ -55,11 +55,11 @@ function Calculate() {
     totalPayment = a + totalInterest;
     monthlyPayment = totalPayment / (y * 12);
 
-    document.getElementById("totalInterest").innerText = " " + totalInterest.toFixed(2);
+    document.getElementById("totalInterest").innerText = " $" + totalInterest.toFixed(2);
 
-    document.getElementById("monthlyPayment").innerText = " " + monthlyPayment.toFixed(2);
+    document.getElementById("monthlyPayment").innerText = " $" + monthlyPayment.toFixed(2);
 
-    document.getElementById("totalPayment").innerText = " " + totalPayment.toFixed(2);
+    document.getElementById("totalPayment").innerText = " $" + totalPayment.toFixed(2);
 
     document.getElementById("loanSummary").style.display = "none";
 }

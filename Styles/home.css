@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width:767px) {
+
+    body .navbar {
+        height: 70px;
+    }
+
+    body .navlinks a{
+        display: none;
+    }
+
+    body .navlink a{
+        display: flex;
+    }
+    body .navbar p {
+       font-size: 1.6em;
+    }
+    body .navbar img {
+        display: flex;
+    }
+
+    footer p{
+        padding: 1.1px 0;
+        font-size: 1em;
+    }
+    body .home-section {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;    
+        color: white;
+    }
+
+    body .home-section div h3, body .apply h2, body .features h2, body .contact h2{
+        font-size: 1.7em;
+    }
+
+    body .contact h2 {
+        margin-bottom: 15px;
+    }
+
+    body .features h2 {
+        margin-bottom: 40px;
+    }
+
+    body .apply{
+        padding-bottom: 0px;
+    }
+
+    body .home-section div p, body .apply p{
+        font-size: 1.3em;
+    }
+
+    body .features .fet p, body .contact .fet p {
+        font-size: 1.3em;
+    }
+    body .overlay {
+        display: none;
+        position: fixed;
+        top: 0; left: 0;
+        width: 100vw; height: 100vh;
+        background: rgba(0,0,0,0.3);
+        z-index: 1000;
+    }  
+
+    body .features .fet p {
+        padding: 1em;
+    }
+    
+    body .apply {
+        margin-bottom:90px;
+    }
+     
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+  --green: #16a34a;
+  --orange: #f97316;
+}
+
+ .fa-solid {
+    color: hsl(120, 100%, 25%);
+ }
+i:hover{
+    color: hsl(120, 50%, 25%);
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+
+.navbar p {
+    font-size: 2em;
+    font-weight: 700;
+    color: hsl(120, 100%, 25%);
+    user-select: none;
+}
+
+.navbar a, .sidebar a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    padding: 5px 15px;
+    font-weight: 400;
+}
+
+.navlinks img {
+    display: none;
+    width: 25px;
+    filter: invert(1);
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: hsl(39, 100%, 50%);
+}
+
+.navbar a:active {
+    color: hsl(39, 100%, 50%);
+    font-weight: 600;
+}
+
+.navbar a:focus {
+    color: hsl(39, 100%, 50%);
+    font-weight: 600;
+}
+
+.sidebar  {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 1001;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: hsla(0, 0%, 4%, 0.6);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;    
+}
+
+.sidebar.active {
+    transform: translateX(0);
+}
+
+.sidebar img {
+    width: 30px;
+    margin: 20px 0 0 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.navbar img:hover {
+    width: 24px;
+}
+
+.sidebar img:hover {
+    width: 28px;
+}
+
+.sidebar a {
+    position: relative;
+    z-index: 1;
+    margin-top: 10px;
+    text-decoration: none;
+    padding: 15px  30px;
+    font-weight: 700;
+    transition: .15s ease-in-out;
+    width: 100%;
+    font-size: 1em;
+    color: white;
+    
+}
+
+.sidebar a:hover {
+
+    background-color: hsla(39, 100%, 50%, 0.3);
+}
+
+.sidebar a:active {
+    background-color: hsla(39, 100%, 50%, 0.2);
+}
+
+.home-section {
+    background-image: url(../Images/3f1ecb5697e58e70364cab5683c0fc58.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    padding: 6em 1em;
+    text-align: center;
+    color: white;
+    width: 100%;
+    position: relative;
+    right: 0;
+}
+
+.home-section::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5); /* Adjust opacity for darkness */
+    z-index: 2;
+}
+
+
+.home-section > * {
+    position: relative;
+    z-index: 3;
+}
+
+.home-section div {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-section div h3 {
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.home-section div p {
+    margin: 15px 0;
+    font-size: 1.5em;
+}
+
+
+.home-section div a {
+    background-color: white;
+    padding: 10px 20px;
+    width: max-content;
+    margin: 15px auto;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: hsl(39, 100%, 50%);
+    transition: .4s ease;
+    text-decoration: none;
+}
+
+.home-section div a:hover {
+    background-color: hsl(39, 100%, 50%);
+    color: white;
+}
+
+.home-section div a:active {
+    background-color: hsla(39, 100%, 50%, 0.5);
+}
+
+.features {    
+    background: hsla(215, 14%, 34%, 0.2);
+    padding: 5em 1em;
+    text-align: center;
+    color: black;
+}
+
+.features h2, .contact h2 {
+    font-size: 1.9em;
+    font-weight: 700;
+    color: hsl(120, 100%, 25%);
+}
+
+.features h2 {
+    margin-bottom: 4em;
+}
+
+.contact {
+    background: hsla(215, 14%, 34%, 0.2);
+    padding: 5em 1.2em;
+    text-align: center;
+    color: black;
+}
+
+.contact h2 {
+    margin-bottom: .8em;
+}
+
+.contact .fet {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;   
+}
+
+.features h2 {
+    margin-bottom: 1em;
+}
+
+.features .fet {
+    gap: 1em;
+}
+
+.features .fet, .contact .fet {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.features .fet p {
+    border-left: 7px solid hsl(39, 100%, 50%);
+    width: 220px;
+    padding: 1.5em;
+}
+
+.features .fet p, .contact .fet p {
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    user-select: none;
+    transition: .2s ease;
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+.features .fet p:hover, .contact .fet p:hover{
+    font-size: 1.1em;
+}
+
+.features .fet p:active, .contact .fet p:active {
+    opacity: .5px;
+}
+
+.apply {  
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding: 4em 1em;
+    text-align: center;   
+    margin-bottom:20px; 
+}
+
+.apply h2 {
+    color: hsl(39, 100%, 50%);
+    font-size: 1.9em;
+    font-weight: 700;
+    margin-bottom: .4em;
+}
+
+.apply p {
+    color: black;
+    font-size: 1.3em;
+    font-weight: 400;
+    padding-bottom: 2em;
+}
+
+.apply a {
+    text-decoration: none;
+    background: hsl(39, 100%, 50%);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-top: 115em;
+}
+
+.apply a:hover {
+    background: hsl(39, 100%, 50%, 0.8);
+}
+
+.apply a:active {
+    background: hsl(39, 100%, 50%, 0.7);
+}
+
+.contact .fet p {
+    /* width: 100px; */
+    padding: 10px;
+    background: linear-gradient(135deg, var(--orange), var(--green) );
+    color: white;
+    /* margin: 0 7px; */
+}
+
+footer {
+    text-align: center;
+    font-size: 1.1em;
+    background:hsla(0, 0%, 0%, 0.855);
+    color: white;
+    padding: 10px 15px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer {
+    position: absolute;
+}
+
+.footer2 {
+    position: relative;
+}

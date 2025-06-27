@@ -7,13 +7,11 @@
 }
 
 @media  (max-width:600px)  {
-    *{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
  body h2{
     font-size: 1.7em;
     margin-bottom: 10px;
     }
+
  body label {
     font-size: 1em;
     }
@@ -25,8 +23,8 @@
         font-size: .9em;
         font-weight: 500;
     }
-    form, .one {
-        width: 320px;
+    body form, .one {
+        max-width: 300px;
     }
     
     body .one{
@@ -77,19 +75,53 @@
         font-size: 1em;
     }
 
+
+
+
+}
+
+form {
+    background: #fff;
+    padding: 2em 2.5em;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    max-width: 400px;
+    width: 100%;
+}
+
+#loanSummary h3 {
+    font-size: 1.2em;
+}
+
+#loanSummary p {
+    font-size: 1em;
+}
+
+:root {
+    --orange: rgba(255, 166, 0, 0.4);
+    --green: rgba(0, 128, 0, 0.4);
 }
 
 body {
-    background: rgba(199, 162, 162, 0.174);
+    /* margin: 100px auto; */
+    height: 100vh;
+    /* background-image: url(../Images/photo-1621504450181-5d356f61d307.avif); */
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    background-color: hsla(0, 0%, 50%, 0.2);
 }
 
 form, .one {
     border-radius: 10px;
     box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.5);
-    max-width: 500px;
-    margin: 50px auto;
-    padding: 30px 30px;
+    max-width: 400px;
+    margin: 100px auto;
+    height: fit-content;
+    padding: 15px 30px;
     background: white;
+    scroll-margin-inline-start: 0px;
 }
 
 .one {
@@ -112,15 +144,15 @@ form, .one {
 }
 
 h2 {
-    font-size: 2.4em;
+    font-size: 2em;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: hsl(120, 65%, 25%);
 }
 
 label {
-    font-size: 1.4em;
+    font-size: 1.1em;
     font-weight: 500;
 }
 
@@ -128,23 +160,23 @@ input {
     border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 7px;
     width: 100%;
-    margin: 5px 0 15px 0;
+    margin: 5px 0 10px 0;
     padding: 10px 5px;
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: .9em;
 
 }
 
 button {
     border: none;
     border-radius: 5px;
-    font-size: 1.5em;
+    font-size: 1.1em;
     font-weight: 700;
     background: hsl(120, 50%, 30%);
     color: white;
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 7px 0;
     cursor: pointer;
     transition: .3s;
 }

@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Request Loan</title>
+    <link rel="stylesheet" href="Styles/home.css">
     <link rel="stylesheet" href="Styles/style.css">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 </head>
 <body>
+        <nav class="navbar">
+        <div>
+            <p>SwiftLoan</p>
+        </div>
+        <div class="navlink">
+            <a onclick="gotoHome()">
+                <i class="fa-solid fa-house"; style="display: flex;"></i>
+            </a>
+
+        </div>
+    </nav>
+
     <div class="parent">
-        <form action="" id="myForm" onsubmit="return validateForm()" novalidate>
+        <form action="" id="myForm" onsubmit="return validateForm()" novalidate style="margin-bottom: auto;">
             <h2 class="">Request Loan</h2>
             <label for="amount">Loan Amount ($)</label><br>
             <input type="number" id="amount" value="" min="1000" max="500000"><br>
@@ -42,6 +55,10 @@
         </div>
     </div>
 </body>
+<footer class="footer">
+    <p>Contact: support@swiftloan.com &copy; 2025 SwiftLoan. All rights reserved.</p>
+</footer>
+<script src="JS/home.js"></script>
 <script src="JS/link.js"></script>
 <script src="JS/index.js"></script>
 </html>

@@ -3,32 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-up Dashboard</title>
-    <link rel="stylesheet" href="Styles/index.css">
-    <link rel="stylesheet" href="Styles/style.css">
+    <title>SwiftLoan Landing Page</title>
+     
+    <link rel="stylesheet" href="Styles/home.css">
 </head>
 <body>
-    <form action="" onsubmit="return validateSignUp()">
-        <h2>MicroFinance Bank</h2>
-        <label for="firstname">Firstname</label><br>
-        <input type="text" id="firstname" name="firstname" placeholder="Firstname"><br>
-
-        <label for="lastname">Lastname</label><br>
-        <input type="text" id="lastname" name="lastname" placeholder="Lastname"><br>
-
-        <label for="email">Email</label><br>
-        <input type="email" name="email" id="email" placeholder="example@gmail.com"><br>
-
-        <label for="password">Password</label><br>
-        <input type="password" name="password" id="password" placeholder="Create password"><br>
-
-        <button type="submit" class="btn">Sign Up</button>
-        <!-- <p class="sign-in-link"><a href="sign-in.html" class="sign-in-link">Already registered? Login here</a></p> -->
-
-        <div id="displayMessage" style="display: none;">
-            Please fill in all required fields!!!
+    <nav class="navbar">
+        <div>
+            <p>SwiftLoan</p>
         </div>
-    </form>
+        <div class="navlinks">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#apply">Apply</a>
+
+            <a class="sideMenu" href="#contact">Contact us</a>            
+            <img src="Icons/menu.png" alt="" style="filter: invert(1);" onclick="showSidebar()">
+        </div>
+    </nav>
+        <div class="sidebar" id="sideBar">
+            <img src="Icons/close.png" alt="" width="30px" id="closeSideBar" onclick="hideSidebar()" class="one">
+                <a class="sideMenu" href="#home">Home</a>
+                <a class="sideMenu" href="#features">Features</a>
+                <a class="sideMenu" href="#apply">Apply</a>
+
+                <a class="sideMenu" href="#contact">Contact us</a>
+        </div>
+        <div class="overlay" id="overlay" class="overlay">
+        </div>
+
+    <section class="home-section"id="home">
+        <div>
+            <h3>Welcome to SwiftLoan</h3>
+            <p>Your quick & trusted loan partner</p>
+            <a href="#apply">Get Started</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div>
+            <h2>Why Choose Us?</h2>
+        </div>
+        <div class="fet">
+            <p class="one">✅ Fast Approval</p>
+            <p class="one">✅ Flexible Terms</p>
+            <p class="one">✅ Secure Process</p>
+        </div>
+    </section>
+
+    <section class="apply" id="apply">
+        <div>
+            <h2>Apply Now</h2>
+            <p>Ready to take the next step? Use our simple form to get started.</p>
+            <a href="home.html">Go to Application</a>
+        </div>
+    </section>
+
+    <section class="calculate-section" id="calculate">
+
+    </section>
+
+    <section class="contact" id="contact">
+        <div>
+            <h2>Contact Us</h2>
+        </div>
+        <div class="fet">
+            <p class="one"><a href="https://www.facebook.com/marvellous.adewuyi.7"></a>Facebook</p>
+            <p class="one"><a href="https://www.instagram.com/marvel_ade?igsh=MTBnY2FnMHoyaGlndQ=="></a>Instagram</p>
+            <p class="one"><a href="https://wa.link/id2smb"></a>Whatsapp</p>
+        </div>
+    </section>
+  
 </body>
-<script src="JS/link.js"></script>
+<footer class="footer2">
+        <p>
+        Contact: support@swiftloan.com &copy; 2025 SwiftLoan. All rights reserved.   
+        </p>
+</footer>
+<script src="JS/home.js"></script>
 </html>
