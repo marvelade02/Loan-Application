@@ -25,8 +25,8 @@
         display: flex;
     }
 
-    footer p{
-        padding: 1.1px 0;
+    html footer {
+        padding: .8em;
         font-size: .8em;
     }
     body .home-section {
@@ -92,7 +92,11 @@
         padding: 7px 5px;
         font-size: 1em;
    }
-     
+   /* html footer {
+    font-size: .8em;
+    /* color: red; */
+   }
+      */
 }
 
 html {
