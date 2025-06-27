@@ -92,11 +92,16 @@
         padding: 7px 5px;
         font-size: 1em;
    }
-   /* html footer {
+    html footer {
     font-size: .8em;
     /* color: red; */
    }
-      */
+   .footer, .footer2 {
+font-size: .8em;
+}
+
+
+      
 }
 
 html {
@@ -444,8 +449,10 @@ footer {
 
 .footer {
     position: absolute;
+        font-size: .8em;
 }
 
 .footer2 {
     position: relative;
+        font-size: .8em;
 }
