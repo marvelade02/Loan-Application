@@ -164,6 +164,12 @@ i:hover{
     border-radius: 5px;
 }
 
+  .features .fet p:hover,
+  .contact .fet p:hover {
+    font-size: inherit;
+    /* Or simply remove this block if you don't want any effect */
+  }
+
 .navbar a:hover {
     font-size: 1.2em;
     font-weight: 400;
