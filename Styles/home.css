@@ -436,6 +436,11 @@ i:hover{
     /* margin: 0 7px; */
 }
 
+.contact .fet a {
+    text-decoration: none;
+    color: white;
+}
+
 footer {
     text-align: center;
     font-size: 1.1em;
